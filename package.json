@@ -1,0 +1,30 @@
+{
+  "name": "hangahanga",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "blipp": "^3.0.0",
+    "good": "^8.1.1",
+    "good-console": "^7.1.0",
+    "hapi": "^17.3.1",
+    "hapi-router": "^4.0.0",
+    "inert": "^5.1.0",
+    "install": "^0.11.0",
+    "mongoist": "^1.7.2",
+    "npm": "^5.8.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "vision": "^5.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "webpack": "^4.6.0"
+  }
+}
