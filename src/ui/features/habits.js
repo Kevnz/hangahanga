@@ -18,7 +18,7 @@ import { useAsync } from '@brightleaf/react-hooks'
 import cronstrue from 'cronstrue'
 import Joi from '@hapi/joi'
 import { useModel, useCollection } from 'ui/core/hooks/use-model'
-import { db } from 'ui/config/firebase'
+import { db, ref } from 'ui/config/firebase'
 
 const FREQUENCY_KEYS = {
   '0 7 * * *': 0,
