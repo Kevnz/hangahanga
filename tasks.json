@@ -3,13 +3,16 @@
   "watch": "npx jest --config=jest.config.js --detectOpenHandles --forceExit --watch",
   "lint": "npx eslint ./src",
   "build": "npx webpack --config ./src/webpack/prod.config.js --mode production",
-  "predev": [
+  "predevx": [
     "docker-compose -f ./docker/docker-compose.yml up --detach",
     "node ./src/scripts/delay.js"
   ],
   "dev": [
+    "webpack-dev-server --config ./src/webpack/dev.config.js --mode development"
+  ],
+  "devx": [
     "cross-env DEBUG=knex:query nodemon ./src/server/index.js",
     "webpack-dev-server --config ./src/webpack/dev.config.js --mode development"
   ],
-  "postdev": "docker-compose -f ./docker/docker-compose.yml down"
+  "postdevz": "docker-compose -f ./docker/docker-compose.yml down"
 }
