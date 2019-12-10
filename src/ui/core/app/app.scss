@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+// 1. Import the initial variables
+@import "bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+// $blue: #06bcef;
+// Add pink and its invert
+// $pink: #ff8080;
+// $pink-invert: #fff;
+// Update the sans-serif font family
+// $family-sans-serif: "Helvetica", "Arial", sans-serif;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+// $primary: $pink;
+// $primary-invert: $pink-invert;
+
+// 4. Import the rest of Bulma
+
+@import "bulma/bulma";
+
+html,
+body {
+  background: #eff3f4;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
+    sans-serif;
+}
+.hero-body .container {
+  max-width: 700px;
+}
+.hero-body .title {
+  color: hsl(192, 17%, 99%) !important;
+}
+.hero-body .subtitle {
+  color: hsl(192, 17%, 99%) !important;
+  padding-top: 2rem;
+  line-height: 1.5;
+}
+.features {
+  padding: 5rem 0;
+}
+.box.cta {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.card-image > .fa {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #209cee;
+}
+.card-content .content {
+  font-size: 14px;
+  margin: 1rem 1rem;
+}
+.card-content .content h4 {
+  font-size: 16px;
+  font-weight: 700;
+}
+.card {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  margin-bottom: 2rem;
+}
+.intro {
+  padding: 5rem 0;
+  text-align: center;
+}
+.sandbox {
+  padding: 5rem 0;
+}
+.tile.notification {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.is-shady {
+  animation: flyintoright 0.4s backwards;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.is-shady:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+/*adds font awesome stars*/
+footer li:before {
+  content: "\f1b2";
+  font-family: "FontAwesome";
+  float: left;
+  margin-left: -1.5em;
+  color: #147efb;
+}
+
+body.darklight {
+  background: black !important;
+  color: white !important;
+  & .navigation-view,
+  & .navbar {
+    background: #222222cc;
+  }
+}
+body.brightlight {
+  color: white !important;
+  background: black !important;
+}
