@@ -3,6 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const baseConfig = require('./config')
 
+const configs = {}
+
+Object.keys(process.env).map(k => {
+  configs[k] = `"${process.env[k]}"`
+})
+
 const devConfig = {
   plugins: [
     new MiniCssExtractPlugin({
@@ -14,6 +20,7 @@ const devConfig = {
     new webpack.DefinePlugin({
       process: {
         env: {
+          ...configs,
           NODE_ENV: '"development"',
         },
       },
