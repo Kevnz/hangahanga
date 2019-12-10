@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "./",
+    "paths": {
+      "ui/*": [
+        "src/ui/*"
+      ],
+      "shared/*": [
+        "src/shared/*"
+      ]
+    }
+  }
+}
