@@ -1,5 +1,77 @@
 {
-  "prettier.arrowParens": "always",
-  "prettier.singleQuote": true,
-  "editor.formatOnSave": true
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#f75853",
+    "titleBar.inactiveBackground": "#f75853",
+    "titleBar.activeForeground": "#fff",
+    "titleBar.border": "#0f1114",
+    "activityBar.foreground": "#fff",
+    "activityBar.background": "#f75853",
+    "activityBar.border": "#0f1114",
+    "tab.activeBorder": "#61dafb",
+    "statusBar.background": "#f75853",
+    "statusBar.border": "#0f1114",
+    "statusBar.foreground": "#fff"
+  },
+  "files.autoSaveDelay": 800,
+  "eslint.autoFixOnSave": true,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": false
+  },
+  "[css]": {
+    "editor.formatOnSave": false
+  },
+  "vsicons.presets.jsOfficial": true,
+  "vsicons.presets.jsonOfficial": true,
+  "vsicons.associations.folders": [
+    {
+      "icon": "view",
+      "extensions": [
+        "ui"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "helper",
+      "extensions": [
+        "tasks"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "video",
+      "extensions": [
+        "casting"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "db",
+      "extensions": [
+        "queries",
+        "migrations"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "api",
+      "extensions": [
+        "core"
+      ],
+      "filename": true,
+      "format": "svg"
+    },
+    {
+      "icon": "component",
+      "extensions": [
+        "features"
+      ],
+      "filename": true,
+      "format": "svg"
+    }
+  ]
 }
