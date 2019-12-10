@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+$animate-scss-default-duration: 1s;
+
+$animate-scss-durations: (
+  fast: 600ms,
+  faster: 300ms,
+  slow: 2s,
+  slower: 3s
+) !default;
+
+.root {
+  padding: 20px 10px;
+}
+
+@import "@brightleaf/animate.scss";
